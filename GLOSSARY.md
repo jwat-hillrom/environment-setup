@@ -12,6 +12,10 @@ _Avoid_: Item, asset, tool, plugin
 An upstream repository Components are drawn from, identified by a short alias (e.g. `pocock`, `ecc`) that prefixes the names of its Components.
 _Avoid_: Upstream, vendor, provider
 
+**Import**:
+Bring selected Components from a Source, at a pinned commit, into this repo: renamed with the Source alias, mechanically converted for the hosts, and committed.
+_Avoid_: Sync, vendor, pull, fetch
+
 **Profile**:
 A named selection of Components, such as `base`, `dotnet` or `typescript`.
 _Avoid_: Preset, bundle, kit, curated list
