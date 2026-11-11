@@ -5,8 +5,12 @@ A curated, repeatable set of AI-agent customizations that can be applied to any 
 ## Language
 
 **Component**:
-A single installable unit of agent customization: an agent, skill, MCP server, instruction file, or prompt.
+A single installable unit of agent customization: an agent, skill, MCP server, instruction file, or hook. Either drawn from a Source or authored in this repo.
 _Avoid_: Item, asset, tool, plugin
+
+**Source**:
+An upstream repository Components are drawn from, identified by a short alias (e.g. `pocock`, `ecc`) that prefixes the names of its Components.
+_Avoid_: Upstream, vendor, provider
 
 **Profile**:
 A named selection of Components, such as `base`, `dotnet` or `typescript`.
