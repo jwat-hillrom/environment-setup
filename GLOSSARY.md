@@ -20,6 +20,18 @@ _Avoid_: Sync, vendor, pull, fetch
 The platform's authored, unprefixed, user-invocable skills (e.g. `/research`, `/review-change`); each builds on Source skills, which it hides from the slash menu.
 _Avoid_: Commands, front doors, skill library
 
+**Workflow**:
+An ordered sequence of Stages for one kind of work (feature, bug, refactor), run by a `flow-` skill.
+_Avoid_: Pipeline, process, state machine
+
+**Stage**:
+One step of a Workflow, performed by a Catalog skill (e.g. `/design`); completed, skipped with a reason, or failed.
+_Avoid_: Step, phase, gate
+
+**Work item**:
+One feature, bug or refactor a Workflow runs on, with a committed folder holding its Stage outputs and state.
+_Avoid_: Task, ticket, job
+
 **Profile**:
 A named selection of Components, such as `base`, `frontend` or `dotnet`. Every Profile includes `base` and may include other Profiles.
 _Avoid_: Preset, bundle, kit, curated list

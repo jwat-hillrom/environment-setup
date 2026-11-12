@@ -1,0 +1,3 @@
+# Workflow state lives in a committed Work item folder
+
+Each Work item gets `docs/work/<slug>/` on its branch, holding every Stage's output and a `state.json` recording each Stage as completed, skipped (with reason) or failed, with its result. Stages hand off through these files rather than chat history, so a Workflow resumes in a new session and subagents receive exactly what they need; hooks, `/ship` and CI read results from the same file. We chose this over an authored workflow-state MCP server because repo files are the only exact, host-neutral store on both VS Code Copilot and Copilot CLI, and they travel with the PR for review and audit.
