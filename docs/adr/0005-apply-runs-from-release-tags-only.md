@@ -1,0 +1,3 @@
+# Apply runs only from release tags and never changes version implicitly
+
+Apply records the release version it ran from (the git tag, equal to `package.json` `version`) in the Target repo's Manifest, and refuses to run from any other ref unless `--dev` is passed, which is marked in the Manifest. A bare `apply` whose CLI version differs from the Manifest's refuses unless `--update` is passed. Branch refs like `#main` give no stable identity to record, so this keeps the Manifest's version meaningful, and makes every upgrade a deliberate, visible change rather than a side effect of which ref someone happened to run.

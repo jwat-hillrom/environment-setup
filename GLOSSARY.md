@@ -27,3 +27,7 @@ _Avoid_: Consumer repo, project, workspace
 **Apply**:
 Bring a Target repo in line with one or more Profiles; re-running converges rather than duplicates.
 _Avoid_: Install, setup, scaffold, sync
+
+**Manifest**:
+The committed record in a Target repo of what Apply placed there: the version applied, the Profiles chosen, and every file and config key each Component owns.
+_Avoid_: Lockfile, state file, config
