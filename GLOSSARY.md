@@ -32,6 +32,10 @@ _Avoid_: Step, phase, gate
 One feature, bug or refactor a Workflow runs on, with a committed folder holding its Stage outputs and state.
 _Avoid_: Task, ticket, job
 
+**Gate**:
+A deterministic check run by the `check` command that blocks merging a Work item when it fails; reviewer judgements are never Gates.
+_Avoid_: Quality gate score, threshold, approval
+
 **Profile**:
 A named selection of Components, such as `base`, `frontend` or `dotnet`. Every Profile includes `base` and may include other Profiles.
 _Avoid_: Preset, bundle, kit, curated list
