@@ -5,7 +5,7 @@ A curated, repeatable set of AI-agent customizations that can be applied to any 
 ## Language
 
 **Component**:
-A single installable unit of agent customization: an agent, skill, MCP server, instruction file, or hook. Either drawn from a Source or authored in this repo.
+A single installable unit of agent customization: an agent, skill, MCP server, instruction file, hook, or Actions workflow (a GitHub Actions file, not a Workflow). Either drawn from a Source or authored in this repo.
 _Avoid_: Item, asset, tool, plugin
 
 **Source**:
@@ -35,6 +35,10 @@ _Avoid_: Task, ticket, job
 **Gate**:
 A deterministic check run by the `check` command that blocks merging a Work item when it fails; reviewer judgements are never Gates.
 _Avoid_: Quality gate score, threshold, approval
+
+**Gate config**:
+The Target repo's own `.github/environment-setup.config.json` tuning Gates (commands, disabled Gates with reasons, extra required docs, approval paths); never written by Apply.
+_Avoid_: Settings, Manifest
 
 **Profile**:
 A named selection of Components, such as `base`, `frontend` or `dotnet`. Every Profile includes `base` and may include other Profiles.

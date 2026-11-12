@@ -7,3 +7,4 @@ All Gates run in a deterministic `check` command of the Apply CLI, executed loca
 - The Work-item-complete and Critical-findings Gates check the recorded `state.json`, which is agent-written: they verify the record, not independent evidence.
 - Making `check` required needs a ruleset or branch protection in the Target repo, which Apply cannot set; it's a one-time setup step.
 - PR evidence (Gate results, Workflow record, findings) is rendered by `check --format markdown`, never restated by the model; a Gate that cannot run counts as failed unless the Target repo explicitly disables it with a reason.
+- Gate tuning lives in a Target-repo-owned Gate config that Apply never writes, so editing it never triggers Apply's local-edit refusal; `check` falls back to Profile defaults when it is absent.
