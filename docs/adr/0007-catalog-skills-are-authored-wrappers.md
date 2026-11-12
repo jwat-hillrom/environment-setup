@@ -1,0 +1,3 @@
+# Every Catalog skill is an authored wrapper over Source skills
+
+Each Catalog entry (`/research`, `/review-change`, `/prototype`, …) is an unprefixed skill authored in this repo, even when it mostly delegates to one Source skill, and import marks the Source skills it wraps `user-invocable: false`. The Catalog is the platform's stable interface: a Source can be swapped or upgraded without renaming commands, and the wrapper is where platform conventions (artifact locations, gates) live, which Source skills don't know about. Source skills that no Catalog entry wraps (e.g. Pocock's planning chain) stay user-invocable.

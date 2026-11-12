@@ -9,5 +9,6 @@ Every Source is brought in by Import: a deterministic CLI command fetches the So
 
 ## Consequences
 
+- Sources that publish no tags (e.g. hallmark, imagegen-skills) are pinned by commit SHA alone.
 - MCP-server Sources are not copied; their Component is a `.mcp.json` entry pinned to an exact published package version.
 - Each Source's licence is stored with its imported Components, and Apply places a `.github/THIRD_PARTY_NOTICES.md` listing the Sources it applied.

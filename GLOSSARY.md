@@ -16,6 +16,10 @@ _Avoid_: Upstream, vendor, provider
 Bring selected Components from a Source, at a pinned commit, into this repo: renamed with the Source alias, mechanically converted for the hosts, and committed.
 _Avoid_: Sync, vendor, pull, fetch
 
+**Catalog**:
+The platform's authored, unprefixed, user-invocable skills (e.g. `/research`, `/review-change`); each builds on Source skills, which it hides from the slash menu.
+_Avoid_: Commands, front doors, skill library
+
 **Profile**:
 A named selection of Components, such as `base`, `dotnet` or `typescript`.
 _Avoid_: Preset, bundle, kit, curated list
