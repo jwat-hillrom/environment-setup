@@ -31,3 +31,7 @@ _Avoid_: Install, setup, scaffold, sync
 **Manifest**:
 The committed record in a Target repo of what Apply placed there: the version applied, the Profiles chosen, and every file and config key each Component owns.
 _Avoid_: Lockfile, state file, config
+
+**Excluded**:
+A Component a Target repo has opted out of: Apply never places, updates or removes it, and any of its files left behind belong to the Target repo.
+_Avoid_: Detached, skipped, ignored, pinned

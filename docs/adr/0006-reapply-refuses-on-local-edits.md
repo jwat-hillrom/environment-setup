@@ -1,0 +1,3 @@
+# Re-Apply refuses on local edits instead of merging
+
+When an owned file or JSON key in a Target repo has been edited or deleted since Apply wrote it (its LF-normalised hash no longer matches the Manifest), Apply refuses that Component rather than overwriting or three-way merging, and because Apply plans first and is all-or-nothing, it then changes nothing at all. The user resolves each refusal explicitly with `--force <component>` (take the curated version, or delete it if it was dropped) or `--exclude <component>` (release it to the Target repo). Merging prose-heavy skill files rarely produces something coherent and would hide the decision; silent overwrite would destroy local work.
