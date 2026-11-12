@@ -21,7 +21,7 @@ The platform's authored, unprefixed, user-invocable skills (e.g. `/research`, `/
 _Avoid_: Commands, front doors, skill library
 
 **Profile**:
-A named selection of Components, such as `base`, `dotnet` or `typescript`.
+A named selection of Components, such as `base`, `frontend` or `dotnet`. Every Profile includes `base` and may include other Profiles.
 _Avoid_: Preset, bundle, kit, curated list
 
 **Target repo**:
